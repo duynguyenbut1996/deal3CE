@@ -1,11 +1,6 @@
 const mongooes = require('mongoose');
 
-const postDetailSchema = mongooes.Schema({
-    orderId: {
-        type: Number,
-        unique: false,
-        require: true
-    },
+const orderDetailSchema = mongooes.Schema({
     productType: {
         type: Number,
         unique: false,
@@ -23,6 +18,6 @@ const postDetailSchema = mongooes.Schema({
     }
 })
 
-const PostDetail = mongooes.model('postDeltai', postDetailSchema);
+const OrderDeltai = mongooes.model('OrderDeltai', orderDetailSchema);
 
-export default PostDetail;
+export default OrderDeltai;
